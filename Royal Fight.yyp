@@ -36,6 +36,7 @@
   "name":"Royal Fight",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_pc_igor","path":"sprites/spr_pc_igor/spr_pc_igor.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
