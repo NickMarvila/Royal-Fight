@@ -40,3 +40,31 @@ if (keyboard_check_pressed(ord("Z"))) {
     soco.dano = 10;
     soco.dono = id;  // IMPORTANTE: Dizer que este soco é MEU
 }
+
+// MORRER SE CAIR DA TELA
+if (y > room_height + 100) {
+    if (!morto) {
+        morto = true;
+        vidas = vidas - 1;  // Perde uma vida
+        
+        show_debug_message("Jogador perdeu uma vida! Vidas restantes: " + string(vidas));
+        
+        // SE ACABARAM AS VIDAS - GAME OVER
+        if (vidas <= 0) {
+            show_debug_message("GAME OVER! 💀");
+            // Aqui podemos fazer algo especial depois
+        }
+        
+        // Esperar 2 segundos e renascer (se ainda tiver vidas)
+        alarm[0] = 120;
+    }
+}
+	
+// DEBUG TEMPORÁRIO - Mostrar info na tela
+if (keyboard_check_pressed(ord("I"))) {
+    show_debug_message("=== DEBUG INFO ===");
+    show_debug_message("Dano total: " + string(dano_total));
+    show_debug_message("Vidas: " + string(vidas));
+    show_debug_message("Morto: " + string(morto));
+    show_debug_message("Posição X: " + string(x) + " Y: " + string(y));
+}
