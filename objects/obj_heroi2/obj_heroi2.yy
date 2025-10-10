@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"obj_heroi2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_heroi","path":"objects/obj_heroi/obj_heroi.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_soco","path":"objects/obj_soco/obj_soco.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_heroi2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pc_igor",
-    "path":"sprites/spr_pc_igor/spr_pc_igor.yy",
+    "name":"spr_heroi",
+    "path":"sprites/spr_heroi/spr_heroi.yy",
   },
   "spriteMaskId":null,
   "visible":true,
